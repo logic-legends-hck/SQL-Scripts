@@ -3,11 +3,11 @@
 
 CREATE TABLE private.Manager (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
-    Name Varchar(50) NOT NULL,
+    Name Integer NOT NULL,
     Age Integer,
-    Birth_Dt Varchar(50),
+    Birth_Dt Integer,
     Gender Integer,
-    Email Varchar(50),
+    Email Integer,
     Phone Integer,
     PRIMARY KEY (Mngr_id)
 );
