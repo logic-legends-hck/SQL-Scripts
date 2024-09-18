@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Manager_DDL: 04 
+--CHANGESET Manager_DDL: 05 
 
 CREATE TABLE private.Manager (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
@@ -13,7 +13,7 @@ CREATE TABLE private.Manager (
 );
 
 GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP "$redshift_group_rw";
-GRANT SELECT ON table private.Manager TO GROUP $redshift_group_ro;
-GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP $redshift_group_off;
-GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP $redshift_group_adm;
+GRANT SELECT ON table private.Manager TO GROUP "$redshift_group_ro";
+GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP "$redshift_group_off";
+GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP "$redshift_group_adm";
 GRANT ALL ON table private.Manager TO edmetl;
