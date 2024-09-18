@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET HR_DDL: 03 
+--CHANGESET HR_DDL: 04 
 
 CREATE TABLE private.HR (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
@@ -12,8 +12,8 @@ CREATE TABLE private.HR (
     PRIMARY KEY (Mngr_id)
 );
 
-GRANT SELECT, UPDATE, INSERT ON table private.HR TO GROUP $redshift_group_rw;
-GRANT SELECT ON table {schema_name}.{table_name} TO GROUP $redshift_group_ro;
-GRANT SELECT, UPDATE, INSERT ON table {schema_name}.{table_name} TO GROUP $redshift_group_off;
-GRANT SELECT, UPDATE, INSERT ON table {schema_name}.{table_name} TO GROUP $redshift_group_adm;
-GRANT ALL ON table {schema_name}.{table_name} TO edmetl;
+GRANT SELECT, UPDATE, INSERT ON table private.HR TO GROUP "$redshift_group_rw";
+GRANT SELECT ON table private.HR TO GROUP $redshift_group_ro;
+GRANT SELECT, UPDATE, INSERT ON table private.HR TO GROUP $redshift_group_off;
+GRANT SELECT, UPDATE, INSERT ON table private.HR TO GROUP $redshift_group_adm;
+GRANT ALL ON table private.HR TO edmetl;
