@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Manager_DDL: 03 
+--CHANGESET Manager_DDL: 04 
 
 CREATE TABLE private.Manager (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
