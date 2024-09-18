@@ -1,7 +1,7 @@
 --liquibase format
---CHANGESET Employee_DDL: 05 
+--CHANGESET Employee_DDL: 06 
 
-CREATE TABLE public.Employee (
+CREATE TABLE ods_producer2.Employee (
     Emp_Id Integer NOT NULL DEFAULT -99999.0,
     Name Varchar(50) NOT NULL,
     Age Integer,
@@ -12,5 +12,5 @@ CREATE TABLE public.Employee (
     PRIMARY KEY (Emp_Id)
 );
 
-GRANT ALL ON TABLE public.Employee to EDMETL; 
-GRANT ALL ON TABLE public.Employee to EDMIDMC;
+GRANT ALL ON TABLE ods_producer2.Employee to EDMETL; 
+GRANT ALL ON TABLE ods_producer2.Employee to EDMIDMC;
