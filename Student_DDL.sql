@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Student_DDL: 03 
+--CHANGESET Student_DDL: 04 
 
 CREATE TABLE private.Student (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
