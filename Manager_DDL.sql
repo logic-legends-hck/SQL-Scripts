@@ -1,7 +1,7 @@
 --liquibase format
---CHANGESET Manager_DDL: 05 
+--CHANGESET Manager_DDL: 06 
 
-CREATE TABLE private.Manager (
+CREATE TABLE insurance_agency.Manager (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
     Name Integer NOT NULL,
     Age Integer,
@@ -12,8 +12,8 @@ CREATE TABLE private.Manager (
     PRIMARY KEY (Mngr_id)
 );
 
-GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP "$redshift_group_rw";
-GRANT SELECT ON table private.Manager TO GROUP "$redshift_group_ro";
-GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP "$redshift_group_off";
-GRANT SELECT, UPDATE, INSERT ON table private.Manager TO GROUP "$redshift_group_adm";
-GRANT ALL ON table private.Manager TO edmetl;
+GRANT SELECT, UPDATE, INSERT ON table insurance_agency.Manager TO GROUP "$redshift_group_rw";
+GRANT SELECT ON table insurance_agency.Manager TO GROUP "$redshift_group_ro";
+GRANT SELECT, UPDATE, INSERT ON table insurance_agency.Manager TO GROUP "$redshift_group_off";
+GRANT SELECT, UPDATE, INSERT ON table insurance_agency.Manager TO GROUP "$redshift_group_adm";
+GRANT ALL ON table insurance_agency.Manager TO edmetl;
