@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET HR_DDL: 03 
+--CHANGESET HR_DDL: 04 
 
 CREATE TABLE private.HR (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
