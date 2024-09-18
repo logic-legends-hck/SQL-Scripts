@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Employee_DDL: 02 
+--CHANGESET Employee_DDL: 01 
 
 CREATE TABLE public.Employee (
     Emp_Id Integer NOT NULL DEFAULT -99999.0,
@@ -12,4 +12,5 @@ CREATE TABLE public.Employee (
     PRIMARY KEY (Emp_Id)
 );
 
- -- grant permissions
+GRANT ALL ON TABLE {schema_name}.{table_name} to EDMETL; 
+GRANT ALL ON TABLE {schema_name}.{table_name} to EDMIDMC;
