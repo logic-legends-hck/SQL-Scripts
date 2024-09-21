@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Student_DDL: 11 
+--CHANGESET Student_DDL: 12 
 
 CREATE TABLE insurance_agency.Student (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
