@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Employee_DDL: 17 
+--CHANGESET Employee_DDL: 18 
 
 CREATE TABLE ods_producer2.Employee (
     Emp_Id Integer NOT NULL DEFAULT -99999.0,
