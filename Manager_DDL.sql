@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET Manager_DDL: 10 
+--CHANGESET Manager_DDL: 11 
 
 CREATE TABLE insurance_agency.Manager (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
