@@ -1,5 +1,5 @@
 --liquibase format
---CHANGESET HR_DDL: 17 
+--CHANGESET HR_DDL: 18 
 
 CREATE TABLE insurance_agency.HR (
     Mngr_id Integer NOT NULL DEFAULT -99999.0,
